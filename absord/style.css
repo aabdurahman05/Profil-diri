@@ -1,0 +1,129 @@
+/* ==========================================================
+   STYLE.CSS
+   Digabungkan dari seluruh Step pada Modul 03A
+   (Step 5, 6, 7, 8, 9, 10, 11, 13, 14, 16)
+   ========================================================== */
+
+/* Step 6 - Styling Dasar Body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222222;
+}
+
+/* Step 7 - Styling Header dan Footer */
+header {
+    background-color: #dbe7f6;
+    padding: 24px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: #dbe7f6;
+    padding: 16px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* Step 8 - Styling Navigation Bar (top navbar) */
+nav {
+    background-color: #ffffff;
+    padding: 14px;
+    border-bottom: 1px solid #cccccc;
+    text-align: center; /* Step 11 - default rata tengah, ubah ke left/right sesuai eksperimen */
+}
+
+nav a {
+    color: #1f4e79;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Step 9 - Styling Main dan Section */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 24px auto;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 18px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* Step 10 - Styling Foto dan Tabel */
+img {
+    max-width: 160px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eef3f8;
+}
+
+/* Step 12 - Class .card (dipakai berulang di beberapa section) */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* Step 13 - Preview Sidebar Kiri (Flexbox terbatas) */
+.page-layout {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 24px auto;
+    align-items: flex-start;
+}
+
+.side-nav {
+    width: 220px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.side-nav a {
+    display: block;
+    padding: 10px;
+    margin: 0;
+}
+
+.page-layout main {
+    flex: 1;
+    width: auto;
+    margin: 0;
+}
+
+/* Step 14 - Preview Sidebar Kanan */
+.page-layout.right {
+    flex-direction: row-reverse;
+}
